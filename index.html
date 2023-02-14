@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <h2>Список пользователей</h2>
+        <div class="search">
+
+            <div>
+                <img class="searchIcon" onclick="InTable(UserData)" src="icons/search.svg" alt="">
+                <input id="inputSearch" type="text" placeholder="Поиск по имени или e-mail">
+            </div>
+            <div class="clear" id="Clear" style="display: none;">
+                <img src="icons/SHvabrasvg.svg" alt="">
+                <button onclick="clearFilter()">Очистить фильтр</button>
+            </div>
+
+        </div>
+        <div class="data">
+            <div id="Sort" class="sort">
+                <span>Сортировка:</span>
+                <button id="SortData" onclick="SortData(UserData)">Дата регистрации</button>
+                <button id="SortRank" onclick="SortRanking(UserData)">Рейтинг</button>
+            </div>
+            <div class="dataUser">
+                <table id="TableUsers">
+                    <thead id="thead">
+                        <tr class="head">
+                            <td>Имя пользователя</td>
+                            <td>E-mail</td>
+                            <td>Дата регистрации</td>
+                            <td>Рейтинг</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div style="visibility: hidden;" id="modalid" class="modal">
+        <div class="modalwrap">
+            <h2>Вы уверенны, что хотите удалить пользователя?</h2>
+            <div><button id="Yes" onclick="Delchoice(UserData,this.id)">Да</button>
+                <button id="No" onclick="Delchoice(UserData,this.id)">Нет</button></div>
+
+        </div>
+    </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

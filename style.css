@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Inter;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #F7F7F7;
+    z-index: 100;
+
+}
+
+.modal,
+.modal .modalwrap {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.407);
+    font-size: 12px;
+
+}
+
+.modal .modalwrap {
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    width: 350px;
+    height: 150px;
+
+}
+
+.modal .modalwrap h2 {
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+
+}
+
+.modal .modalwrap div {
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+.modal .modalwrap div button {
+    font-size: 1em;
+    cursor: pointer;
+    border: 0;
+    background-color: #E0E0E0;
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+    color: #828282;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, .2);
+
+}
+
+.modal .modalwrap div button:not(:first-child) {
+
+    background-color: #0CB4F1;
+    color: #FFFFFF;
+
+
+}
+
+.modal div button:active {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .2);
+}
+
+.wrap {
+    width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.wrap h2 {
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+
+}
+
+.wrap .search {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 18px 15px rgba(148, 148, 148, 0.15);
+    border-radius: 7px;
+    margin-bottom: 80px;
+}
+
+.wrap .search .searchIcon {
+    cursor: pointer;
+
+}
+
+.wrap .search div:first-child {
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    padding: 5px;
+    display: flex;
+    background-color: #ECEFF0;
+
+
+
+}
+
+.wrap .search div {
+    display: flex;
+
+
+
+}
+
+.wrap .search div input {
+    height: 24px;
+    padding: 5px;
+    width: 900px;
+    border: 0;
+    background-color: #ECEFF0;
+    outline: none;
+
+
+
+
+}
+
+.wrap .search div input::placeholder {
+    color: #9EAAB4;
+
+}
+
+.wrap .search .clear {
+    display: flex;
+
+
+}
+
+.wrap .search div button {
+    cursor: pointer;
+    border: 0;
+    background-color: #FFFFFF;
+
+}
+
+.wrap .search div button:hover {
+    color: #666666;
+
+}
+
+.wrap .data .sort {
+
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.wrap .data .sort span {
+    display: inline-block;
+    margin-right: 10px;
+    color: #9EAAB4;
+
+}
+
+.wrap .data .sort button {
+    border: 0;
+    background-color: #F7F7F7;
+    color: #9EAAB4;
+    font-size: 10px;
+    font-weight: 500;
+    margin-right: 10px;
+    border-bottom: dashed #9EAAB4 2px;
+    cursor: pointer;
+
+}
+
+.wrap .data .sort button:focus {
+    border-bottom: dashed #333333 2px;
+    color: #333333;
+
+}
+
+.wrap .data .dataUser table {
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #FFFFFF;
+
+
+}
+
+.wrap .data .dataUser table tr {
+    border-bottom: solid #9EAAB4 2px;
+    margin: 10px 0;
+    padding: 20px;
+    display: block;
+
+
+
+
+
+}
+
+.wrap .data .dataUser table td {
+    color: #ACACAC;
+}
+
+.wrap .data .dataUser table td:nth-child(1) {
+    width: 250px;
+}
+
+.wrap .data .dataUser table td:nth-child(2) {
+    width: 250px;
+}
+
+.wrap .data .dataUser table td:nth-child(3) {
+    width: 250px;
+}
+
+.wrap .data .dataUser table td:nth-child(4) {
+    width: 75px;
+}
+
+.wrap .data .dataUser table td:nth-child(5) {
+    width: 75px;
+}
+
+.wrap .data .dataUser table tbody td img {
+    float: right;
+    cursor: pointer;
+
+
+
+
+}
+
+.wrap .data .dataUser table tbody td img:hover {
+    fill: red;
+
+
+
+
+}
+
+.wrap .data .dataUser table thead tr:first-child {
+    color: #9EAAB4;
+
+}
+
+.wrap .data .dataUser table tbody tr td:first-child {
+    color: #0CB4F1;
+    font-weight: 700;
+
+}
